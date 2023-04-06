@@ -11,11 +11,6 @@ struct ListNode {
 };
 
 
-// I am having to insert element into a LinkedList. There are 3 ways to insert an elememt into it 
-// 1. Insert at the beginning
-// 2. Insert at the end
-// 3. Insert at a given position
-
 // Insert at the beginning
 void insertAtBeginning(ListNode *head, int number){
     ListNode *temp = new ListNode(number);
@@ -24,10 +19,7 @@ void insertAtBeginning(ListNode *head, int number){
 }
 
 
-
-
 // Insert at the end
-
 void insertAtEnd(ListNode *head, int number){
     ListNode *temp = new ListNode(number);
     ListNode *temp2 = head;
@@ -38,11 +30,7 @@ void insertAtEnd(ListNode *head, int number){
 }
 
 
-
-
-
 // Insert at a given position
-
 void insertAtPosition(ListNode *head, int number, int position){
     ListNode *temp = new ListNode(number);
     ListNode *temp2 = head;
@@ -93,4 +81,5 @@ int mains(){
         }
 
     }
+    return 0;
 }
