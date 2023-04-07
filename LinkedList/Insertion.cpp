@@ -44,7 +44,7 @@ void insertAtPosition(ListNode *head, int number, int position){
 }
 
 
-int mains(){
+int main(){
     bool insert = true;
     ListNode *head = new ListNode(10);
     while(insert){
@@ -79,6 +79,8 @@ int mains(){
                 cout<<"Invalid choice"<<endl;
                 break;
         }
+        cout<<"Do you want to enter more elements? (1/0): ";
+        cin>>insert;
 
     }
     return 0;
